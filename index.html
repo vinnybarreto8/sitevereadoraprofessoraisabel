@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professora Vereadora Isabel</title>
+  <style>
+    :root {
+      --vermelho: #c62828;
+      --preto: #000000;
+      --amarelo: #ffca28;
+      --branco: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: var(--branco);
+      color: var(--preto);
+    }
+
+    header {
+      background-color: var(--vermelho);
+      color: var(--branco);
+      padding: 1rem;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--branco);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--amarelo);
+    }
+
+    .section {
+      padding: 5rem 1rem 3rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .section:nth-child(even) {
+      background-color: #f7f7f7;
+    }
+
+    h1, h2 {
+      color: var(--vermelho);
+    }
+
+    footer {
+      background-color: var(--preto);
+      color: var(--branco);
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .galeria img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border: 3px solid var(--vermelho);
+    }
+
+    .contato-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .contato-form input, .contato-form textarea {
+      padding: 0.8rem;
+      border: 1px solid var(--preto);
+    }
+
+    .contato-form button {
+      background-color: var(--amarelo);
+      color: var(--preto);
+      border: none;
+      padding: 0.8rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .contato-form button:hover {
+      background-color: var(--vermelho);
+      color: var(--branco);
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <div><strong>Profª Isabel</strong></div>
+    <div>
+      <a href="#inicio">Início</a>
+      <a href="#biografia">Biografia</a>
+      <a href="#propostas">Propostas</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#conquistas">Conquistas</a>
+      <a href="#galeria">Galeria</a>
+      <a href="#contato">Contato</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="section" id="inicio">
+    <h1>Bem-vindo ao site da Professora Vereadora Isabel</h1>
+    <p>Trabalhando com amor, educação e justiça social para nossa cidade.</p>
+  </section>
+
+  <section class="section" id="biografia">
+    <h2>Biografia</h2>
+    <p>Isabel é educadora há mais de 25 anos, defensora da escola pública e da inclusão. Como vereadora, atua com seriedade e dedicação às causas sociais.</p>
+  </section>
+
+  <section class="section" id="propostas">
+    <h2>Propostas</h2>
+    <ul>
+      <li>Melhoria da infraestrutura das escolas públicas</li>
+      <li>Apoio a projetos de cultura e juventude</li>
+      <li>Transparência e participação cidadã</li>
+    </ul>
+  </section>
+
+  <section class="section" id="projetos">
+    <h2>Projetos</h2>
+    <p>Conheça os projetos de lei, moções e indicações apresentados por Isabel no legislativo municipal.</p>
+  </section>
+
+  <section class="section" id="conquistas">
+    <h2>Conquistas</h2>
+    <p>Desde seu primeiro mandato, Isabel viabilizou reformas em 4 escolas, criou o programa "Jovem na Política" e articulou verbas para a saúde básica.</p>
+  </section>
+
+  <section class="section" id="galeria">
+    <h2>Galeria</h2>
+    <div class="galeria">
+      <img src="https://via.placeholder.com/300x200" alt="Evento 1"/>
+      <img src="https://via.placeholder.com/300x200" alt="Evento 2"/>
+      <img src="https://via.placeholder.com/300x200" alt="Evento 3"/>
+    </div>
+  </section>
+
+  <section class="section" id="contato">
+    <h2>Contato</h2>
+    <form class="contato-form">
+      <input type="text" placeholder="Seu nome" required/>
+      <input type="email" placeholder="Seu e-mail" required/>
+      <textarea placeholder="Sua mensagem" rows="4" required></textarea>
+      <button type="submit">Enviar mensagem</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Professora Vereadora Isabel. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
